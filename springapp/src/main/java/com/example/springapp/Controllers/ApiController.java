@@ -6,8 +6,9 @@ import org.springframework.http.ResponseEntity;
 
 @RestController
 public class ApiController {
+
     @GetMapping("/welcome")
     public ResponseEntity<String> Welcome(){
-        return RespnseEntity.status(200).body("Welcome String Boot!");
+        return ResponseEntity.status(200).body("Welcome String Boot!");
     }
 }
